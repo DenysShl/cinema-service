@@ -33,7 +33,7 @@ users, tickets and movies. Interaction with the database implemented using `Spri
 - Security layer (security)
 
 ## Technologies that were used to create the service:
-- ###Tehnologies:
+### Tehnologies:
   - Apache Tomcat (to run app locally)
   - PostgreSQL
   - Hibernate
@@ -41,7 +41,7 @@ users, tickets and movies. Interaction with the database implemented using `Spri
   - Log4j
   - Spring
 
-- ###Tests:
+### Tests:
   - Spring-test
   - JUnit 5
   - Mockito
@@ -50,7 +50,7 @@ users, tickets and movies. Interaction with the database implemented using `Spri
 
 ## 🚀️ Installation 🚀️
 
-###Repositories [GitHub](https://github.com/DenysShl/cinema-service.git)
+### Repositories [GitHub](https://github.com/DenysShl/cinema-service.git)
 1. Type git clone, and then paste the URL you copied earlier.
   - `$ git clone https://github.com/DenysShl/cinema-service.git`
 2. Create data base in `PostgreSQL`
@@ -66,9 +66,10 @@ users, tickets and movies. Interaction with the database implemented using `Spri
 3. Configure `db.properties` that's located in resources folder.
 4. Add `TomCat` version `9.0.63` servlet server to the project configuration.
 5. You can login on web pages: Login: `admin@i.ua` Password: `admin123`
-6. You can check the registration through "Postman" using 
-   method: POST url: `http://localhost:8088/register`
-   body:
+6. You can check the registration through "Postman" using: 
+   - method: `POST` 
+   - url: `http://localhost:8088/register`
+   - body:
 ```json
 {
     "email":"alisa.shd@gmail.com",
@@ -84,7 +85,7 @@ the answer should be in the form of:
     "email": "alisa.shd@gmail.com"
 }
 ```
-or using existing tests.
+or using existing tests that's located in `test` folder
 
 
 
