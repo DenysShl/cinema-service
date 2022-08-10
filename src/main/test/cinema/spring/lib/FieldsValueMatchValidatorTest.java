@@ -49,5 +49,4 @@ class FieldsValueMatchValidatorTest {
         registrationDto.setRepeatPassword(password);
         return registrationDto;
     }
-
 }
