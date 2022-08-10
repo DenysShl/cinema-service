@@ -65,8 +65,7 @@ users, tickets and movies. Interaction with the database implemented using `Spri
   ```
 3. Configure `db.properties` that's located in resources folder.
 4. Add `TomCat` version `9.0.63` servlet server to the project configuration.
-5. login: `admin@i.ua`
-   Password: `admin123`
+5. You can login on web pages: Login: `admin@i.ua` Password: `admin123`
 6. You can check the registration through "Postman" using 
    method: POST url: `http://localhost:8088/register`
    body:
