@@ -1,39 +1,30 @@
 ![](images/start.jpg)
 <p align="center" style="font-size: 38px">
-CINEMA-SERVICE
 </p>
 
-## Cinema-Service with use Spring
+## Cinema-Service
 ### Project description:
 
-This is an application that represents the Cinema service. It is built using SOLID principles and implemented as such
-functionalities such as authentication, registration, selection of all movies, user tickets, list of permitted movie theaters. With the ability to add new ones and delete them
+This is an application that represents the Cinema service. It is built using SOLID principles and implemented such
+functions as authentication, registration, selection of all movies, user tickets, don't think that you have such function. With the ability to add new ones and delete them
 users, tickets and movies. Interaction with the database implemented using `Spring`.
 
 ## Features 👀️:
 
-- User find by email and create
-- Authentication login and register
-- Create cinema hall
-- Create movie service
-- Create movie session service
-- Create order
-- Create shopping cart service
-- Complete order
-- Request body all cinema hall, movie, user, order
-- Login and Register
+- Find user by email 
+- Login and registration
+- Create cinema hall, movie, movie session, order, shopping cart
+- Get cinema halls, movies, orders
 
 ## Realization details
-
 ### The project uses the following architecture:
-### Project based on 4-layer architecture:
+### Project based on 3-layer architecture:
 - Data access layer (DAO)
 - Application layer (services)
 - REST layer (controllers)
-- Security layer (security)
 
 ## Technologies that were used to create the service:
-### Tehnologies:
+### Technologies:
   - Apache Tomcat (to run app locally)
   - PostgreSQL
   - Hibernate
@@ -48,12 +39,13 @@ users, tickets and movies. Interaction with the database implemented using `Spri
   - HSQL
   - Postman
 
-## 🚀️ Installation 🚀️
+### [GitHub repository](https://github.com/DenysShl/cinema-service.git)
 
-### Repositories [GitHub](https://github.com/DenysShl/cinema-service.git)
+## 🚀️ Installation and launch project 🚀️
+
 1. Type git clone, and then paste the URL you copied earlier.
   - `$ git clone https://github.com/DenysShl/cinema-service.git`
-2. Create data base in `PostgreSQL`
+2. Create database in `PostgreSQL`
   ```sql
     CREATE DATABASE cinema
     WITH
@@ -64,9 +56,11 @@ users, tickets and movies. Interaction with the database implemented using `Spri
     CONNECTION LIMIT = -1;
   ```
 3. Configure `db.properties` that's located in resources folder.
-4. Add `TomCat` version `9.0.63` servlet server to the project configuration.
-5. You can login on web pages: Login: `admin@i.ua` Password: `admin123`
-6. You can check the registration through "Postman" using: 
+4. Add TomCat version 9.0.63 to the project configuration.
+5. Use `db.properties` to specify the user and password settings for the connection database
+6. Specify the folder and path where the logs will be stored in the `log4j2.properties` file located in the `resources` folder
+7. You can login on web pages: Login: `admin@i.ua` Password: `admin123`
+8. You can check the registration through "Postman" using: 
    - method: `POST` 
    - url: `http://localhost:8088/register`
    - body:
@@ -85,7 +79,6 @@ the answer should be in the form of:
     "email": "alisa.shd@gmail.com"
 }
 ```
-or using existing tests that's located in `test` folder
 
 
 
